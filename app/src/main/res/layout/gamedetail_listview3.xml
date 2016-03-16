@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/nickname_gamedetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是谁"
+            android:textColor="@android:color/holo_blue_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/nickname_gamedetail"
+            android:text="@string/publish" />
+
+        <TextView
+            android:id="@+id/pudate_gamedetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="sssss" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/content_gamedetail"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_height="wrap_content"
+        android:text="sssssssssss" />
+</LinearLayout>

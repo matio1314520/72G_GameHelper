@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_back_normal" />
+
+    <TextView
+        android:id="@+id/register_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/user_register"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/register_user"
+        android:layout_marginTop="10dp"
+        android:background="#ecedf0" />
+
+    <EditText
+        android:id="@+id/tel_register_edt"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#ecedf0"
+        android:focusable="true"
+        android:hint="@string/tel_input"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/other_register_edt"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/tel_register_edt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#ecedf0"
+        android:hint="@string/othername"
+        android:paddingLeft="10dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/password_register_edt"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/other_register_edt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#ecedf0"
+        android:hint="@string/password_input"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/invite_register_edt"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/password_register_edt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#ecedf0"
+        android:hint="@string/invite_input"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invite_register_edt"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="13dp"
+        android:checked="true"
+        android:text="@string/read"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/invite_register_edt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="#0080f0"
+        android:text="@string/next"
+        android:onClick="next"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

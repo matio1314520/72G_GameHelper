@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/image_viewpager1"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@mipmap/icon_index_red" />
+
+        <TextView
+            android:id="@+id/game_task_state_viewpager1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/load_viewpager1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/image_viewpager1"
+            android:text="首次安装"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/load_viewpager1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/image_viewpager1"
+            android:text="创建角色并试玩5分钟"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="52dp"
+            android:layout_marginTop="14dp"
+            android:src="@mipmap/icon_ub" />
+
+        <TextView
+            android:id="@+id/dl_back_jifen_viewpager1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="67dp"
+            android:layout_marginTop="14dp"
+            android:text="+600"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="14dp"
+            android:background="#0080f0"
+            android:text="@string/unfinish"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/test_viewpager1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/load_viewpager1"
+            android:layout_marginTop="60dp"
+            android:text="试玩信息"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_viewpager1"
+            android:layout_marginTop="10dp"
+            android:text="下载并试玩3分钟即可获得奖励"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/attention_viewpager1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_viewpager1"
+            android:layout_marginTop="37dp"
+            android:text="注：必须在72G游戏助手下载游戏才能获得奖励"
+            android:textColor="#0080f0"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/line_viewpager1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/attention_viewpager1"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/line_viewpager1"
+            android:layout_marginTop="30dp"
+            android:text="@string/gameshow"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/gamedesc_viewpager1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/line_viewpager1"
+            android:layout_marginTop="60dp"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:id="@+id/gameteail_container"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/gamedesc_viewpager1"
+            android:layout_marginTop="20dp">
+
+            <fragment
+                android:name="matio.angel.com.myapplication_gamehelper.fragment.GamedetailFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+    </RelativeLayout>
+</ScrollView>

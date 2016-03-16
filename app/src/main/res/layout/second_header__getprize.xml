@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/aname_listviewheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获奖名单"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/touxiang"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/aname_listviewheader"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/touxiang" />
+
+    <TextView
+        android:id="@+id/writer_listviewheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aname_listviewheader"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/touxiang"
+        />
+
+    <TextView
+        android:id="@+id/pudate_listviewheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/writer_listviewheader"
+        android:layout_alignParentRight="true"
+       />
+
+    <TextView
+        android:id="@+id/content_listviewheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/touxiang"
+        android:layout_marginTop="10dp"
+         />
+
+    <TextView
+        android:id="@+id/speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_listviewheader"
+        android:layout_marginTop="10dp"
+        android:text="@string/speak"
+        android:textColor="#0080f0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/speak"
+        android:layout_marginTop="5dp"
+        android:background="#0080f0" />
+
+
+</RelativeLayout>

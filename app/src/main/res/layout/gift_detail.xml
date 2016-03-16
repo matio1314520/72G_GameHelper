@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_firstitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:onClick="choose"
+                android:src="@mipmap/ic_back_normal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/giftdetail"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/share_firstitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:onClick="choose"
+                android:src="@mipmap/ic_share_normal" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/bg_giftdetail_head">
+
+            <LinearLayout
+                android:id="@+id/first_item_lin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_firstitem"
+                    android:layout_width="66dp"
+                    android:layout_height="70dp"
+                    android:src="@android:drawable/ic_dialog_email" />
+
+                <TextView
+                    android:id="@+id/money_firstitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="0U币"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/name_firstitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/first_item_lin"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/first_item_lin"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_firstitem"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/first_item_lin"
+                android:text="@string/leftsize"
+                android:textColor="@android:color/white" />
+
+            <ProgressBar
+                android:id="@+id/progress_firstitem"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="150dp"
+                android:layout_height="17dp"
+                android:layout_below="@id/name_firstitem"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/left" />
+
+            <TextView
+                android:id="@+id/left_firstitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_firstitem"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/progress_firstitem"
+                android:text="00/00"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/endstart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/left"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/first_item_lin"
+                android:text="@string/startend"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/endstart_firstitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/left"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/endstart"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/android_ios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/endstart"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/first_item_lin"
+                android:text="@string/best"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/android_ios"
+                android:layout_toRightOf="@id/android_ios"
+                android:src="@mipmap/ic_android" />
+
+            <ImageView
+                android:id="@+id/ios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/android_ios"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/android"
+                android:src="@mipmap/ic_ios" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/hide_firstitem"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#ecedf0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="@string/type" />
+
+            <TextView
+                android:id="@+id/type_firstitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/type"
+                android:text="角色扮演" />
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/type_firstitem"
+                android:text="@string/size" />
+
+            <TextView
+
+                android:id="@+id/size_firstitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/size"
+                android:text="199MB" />
+
+            <Button
+                android:id="@+id/download_giftdetail"
+                android:layout_width="70dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="#0080f0"
+                android:onClick="choose"
+                android:text="@string/loadgame"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/giftcontent"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/giftcontent_firstitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/getway"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/getway_firstitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:background="#ecedf0">
+
+        <Button
+            android:id="@+id/getcount_firstitem"
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="#0080f0"
+            android:onClick="choose"
+            android:text="@string/getnum"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</LinearLayout>

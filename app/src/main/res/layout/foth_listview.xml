@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="84dp">
+
+    <ImageView
+        android:id="@+id/forth_image_listview2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/forth_title_listview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/forth_image_listview2"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/forth_image_listview2"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <RatingBar
+        android:id="@+id/forth_left_listview2"
+        style="?android:ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/forth_image_listview2"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/forth_join_listview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/forth_image_listview2"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/forth_image_listview2"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/forth_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/forth_join_listview2"
+        android:layout_toRightOf="@id/forth_join_listview2"
+        android:text="@string/down_load" />
+
+    <TextView
+        android:id="@+id/forth_end_listview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/forth_join_listview2"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@id/forth_txt" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/load_fothlistview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/forth_download" />
+
+        <TextView
+            android:id="@+id/forth_ubi_listview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp" />
+    </LinearLayout>
+</RelativeLayout>

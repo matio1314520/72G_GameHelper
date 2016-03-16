@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back_gamedetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
+        android:src="@mipmap/ic_back_normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/gamedetail"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/share_gamedetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
+        android:src="@mipmap/ic_share_normal" />
+
+    <ImageView
+        android:id="@+id/snapshot_gamedetail"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/icon_gamedetail"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="150dp" />
+
+    <TextView
+        android:id="@+id/name_gamedetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/icon_gamedetail"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/icon_gamedetail"
+        android:text="sssssssssssss"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <RatingBar
+        android:id="@+id/score_gamedetail"
+        style="?android:ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_gamedetail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/icon_gamedetail"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/score_gamedetail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/icon_gamedetail"
+        android:text="@string/version" />
+
+    <TextView
+        android:id="@+id/versionsizecount_gamedetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/score_gamedetail"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/version" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_gamedetail"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_below="@id/icon_gamedetail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0080f0"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/gameinfo"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/gamegift" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/gamespeak" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/line_gamedetail"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/radiogroup_gamedetail"
+        android:layout_marginTop="5dp"
+        android:background="#0080f0" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vieapager_gamedetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/load_lin_gamedetail"
+        android:layout_below="@id/line_gamedetail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/load_lin_gamedetail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ecedf0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/submit_gamedetail"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#0080f0"
+            android:text="@string/submit"
+            android:onClick="onClick"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/load_gamedetail"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="#0080f0"
+            android:text="@string/load"
+            android:onClick="onClick"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/publishspeak_lin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ecedf0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/publishspeak_gamedetail"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#0080f0"
+            android:text="@string/publishspeak"
+            android:onClick="onClick"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
